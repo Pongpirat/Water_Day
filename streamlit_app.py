@@ -195,9 +195,9 @@ def randomly_delete_data(data, start_date, end_date):
 
     # ลบข้อมูลในแต่ละสัปดาห์
     for week, group in weekly_groups:
-        # จำนวนวันที่ต้องการลบในแต่ละสัปดาห์ (สุ่มระหว่าง 0-3 วัน)
+        # จำนวนวันที่ต้องการลบในแต่ละสัปดาห์ (สุ่มระหว่าง 0-2 วัน)
         min_days = 0
-        max_days = 3
+        max_days = 2
         num_days_to_delete = np.random.randint(min_days, max_days + 1)
 
         # จำนวนแถวในกลุ่ม (สัปดาห์) ที่จะลบ
